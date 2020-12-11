@@ -77,6 +77,11 @@ public class Client {
         return phone;
     }
 
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+
     @Override
     public String toString() {
         return "{\"_class\":\"Client\", " +
@@ -90,9 +95,6 @@ public class Client {
                 "}";
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
 
     @Override
     public boolean equals(Object o) {
