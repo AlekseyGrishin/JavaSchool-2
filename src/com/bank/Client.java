@@ -77,14 +77,23 @@ public class Client {
         return phone;
     }
 
+    @Override
+    public String toString() {
+        return "{\"_class\":\"Client\", " +
+                "\"id\":\"" + id + "\"" + ", " +
+                "\"firstName\":" + (firstName == null ? "null" : "\"" + firstName + "\"") + ", " +
+                "\"lastName\":" + (lastName == null ? "null" : "\"" + lastName + "\"") + ", " +
+                "\"age\":" + (age == null ? "null" : "\"" + age + "\"") + ", " +
+                "\"sex\":" + (sex == null ? "null" : "\"" + sex + "\"") + ", " +
+                "\"address\":" + (address == null ? "null" : "\"" + address + "\"") + ", " +
+                "\"phone\":" + (phone == null ? "null" : "\"" + phone + "\"") +
+                "}";
+    }
+
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
-    @Override
-    public String toString() {
-        return firstName;
-    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

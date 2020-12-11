@@ -5,5 +5,7 @@ public class Transfer {
         Credit credit = new Credit(50000, 2, 15);
         credit.getCredit(new Client("Антон"), credit);
         credit.repayCredit(credit, 15000);
+        Client client = new Client("new");
+        System.out.println(client);
     }
 }
