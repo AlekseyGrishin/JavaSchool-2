@@ -1,4 +1,4 @@
-package com.bank;
+package com.bank.entity;
 
 import java.util.Objects;
 
@@ -10,12 +10,13 @@ public class Client {
     private String sex;
     private String address;
     private String phone;
+    private int balance;
 
-    Client(String firstName){
+    public Client(String firstName){
         this.firstName = firstName;
     }
 
-    Client(long id, String firstName, String lastName, Integer age, String sex, String address, String phone){
+    public Client(long id, String firstName, String lastName, Integer age, String sex, String address, String phone, int balance){
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -23,6 +24,15 @@ public class Client {
         this.sex = sex;
         this.address = address;
         this.phone = phone;
+        this.balance = balance;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
     }
 
     public long getId() {

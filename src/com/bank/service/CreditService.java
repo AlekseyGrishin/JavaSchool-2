@@ -1,9 +1,9 @@
-package com.bank;
+package com.bank.service;
+
+import com.bank.entity.Client;
+import com.bank.entity.Credit;
 
 public interface CreditService {
-    int sum = 0;
-    int time = 0;
-    double percent = 0;
     void getCredit(Client client, Credit credit);
     int repayCredit(Credit credit, int enterSum);
 }
